@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cartridges"></div>
+    <button onclick="addCartridge()">Добавить кассету</button>
+    <button onclick="removeCartridge()">Удалить последнюю кассету</button>
+    <label>
+      Сумма к выдаче
+      <input type="number" id="sumInput" />
+    </label>
+    <button onclick="check()">Проверить</button>
+    <script src="index.js"></script>
+    <script src="check.js"></script>
+  </body>
+</html>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+    padding: 8px;
+  }
+  .cartridges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .cartridge {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+    width: 160px;
+  }
+  select {
+    display: block;
+  }
+</style>
