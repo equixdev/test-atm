@@ -62,7 +62,6 @@ const renderCartridges = () => {
     isWorkingInput.onclick = () => {
       cartridges[id].isWorking = !cartridges[id].isWorking;
       isWorkingInput.checked = cartridges[id].isWorking;
-      console.log(cartridges);
     };
     label.append(isWorkingInput, "исправна");
     cartridgeCard.append(label);
@@ -74,7 +73,6 @@ const renderCartridges = () => {
     banknotesInput.onchange = (event) => {
       event.preventDefault();
       cartridges[id].banknotesLeft = parseInt(banknotesInput.value);
-      console.log(cartridges);
     };
 
     cartridgeCard.append(banknotesInput);
@@ -85,7 +83,6 @@ const renderCartridges = () => {
     nominalInput.onchange = (event) => {
       event.preventDefault();
       cartridges[id].nominal = parseInt(nominalInput.value);
-      console.log(cartridges);
     };
 
     cartridgeCard.append(nominalInput);
